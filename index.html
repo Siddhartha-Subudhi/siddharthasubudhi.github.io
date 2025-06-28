@@ -19,79 +19,47 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/flaticon.css"> <!-- Used for various icons -->
 	<link rel="stylesheet" href="css/style.css">
-<style>
-  :root {
-    --primary: #DC2626;        /* Crimson Red */
-    --primary-light: #EF4444;  /* Soft Red */
-    --background: #FAFAFA;     /* Very Light Gray */
-    --text-dark: #1F2937;      /* Slate/Black */
-    --text-light: #ffffff;     /* White */
-  }
 
-  /* Base background and text */
-  body, html, .ftco-section, .hero-wrap, section, .bg-light {
-    background-color: var(--background) !important;
-    color: var(--text-dark) !important;
-  }
+    <style>
+        /* Custom styles for potential adjustments or overrides from the template's style.css */
+        /* You can adjust colors here if you want to override the template's default primary color */
+        /* The template's primary color seems to be based on #F96D00 or a similar orange/red tone.
+           If you want to maintain a blue theme, you'd need to modify css/style.css or add more overrides here. */
 
-  h1, h2, h3, h4, h5, h6,
-  .heading-section .subheading,
-  .text-primary,
-  .navbar a,
-  a.nav-link,
-  .nav-link.active {
-    color: var(--primary) !important;
-  }
-
-  /* Primary buttons */
-  .btn-primary,
-  .btn.btn-primary {
-    background-color: var(--primary) !important;
-    border-color: var(--primary) !important;
-    color: var(--text-light) !important;
-  }
-
-  .btn-primary:hover,
-  .btn-primary:focus {
-    background-color: var(--primary-light) !important;
-    border-color: var(--primary-light) !important;
-  }
-
-  /* Outline buttons */
-  .btn-outline-primary {
-    border-color: var(--primary) !important;
-    color: var(--primary) !important;
-  }
-
-  .btn-outline-primary:hover,
-  .btn-outline-primary:focus {
-    background-color: var(--primary) !important;
-    color: var(--text-light) !important;
-  }
-
-  /* Section backgrounds */
-  .bg-primary,
-  .ftco-section.bg-primary,
-  .ftco-footer {
-    background-color: var(--primary) !important;
-    color: var(--text-light) !important;
-  }
-
-  /* Links */
-  a {
-    color: var(--primary) !important;
-  }
-
-  a:hover {
-    color: var(--primary-light) !important;
-  }
-
-  /* Optional class for accents */
-  .text-accent-red {
-    color: var(--primary-light) !important;
-  }
-</style>
-
+        /* Example of overriding the primary button color to a blue,
+           if the template's primary is orange/red and you prefer blue for CTAs */
+        .btn-primary {
+            background: #1E40AF !important; /* Deep Blue */
+            border-color: #1E40AF !important;
+        }
+        .btn-primary:hover, .btn-primary:focus {
+            background: #2563EB !important; /* Slightly lighter blue on hover */
+            border-color: #2563EB !important;
+        }
+        .btn-outline-primary {
+            border-color: #1E40AF !important;
+            color: #1E40AF !important;
+        }
+        .btn-outline-primary:hover, .btn-outline-primary:focus {
+            background: #1E40AF !important;
+            color: #fff !important;
+        }
+        /* Color for progress bars etc. if they use border-primary */
+        .border-primary {
+            border-color: #1E40AF !important;
+        }
+        /* Color for headings if they inherit from primary or default to dark */
+        .heading-section .subheading {
+            color: #2563EB !important; /* Accent blue for subheadings */
+        }
+        .ftco-section.bg-primary {
+            background: #1E40AF !important; /* Testimonials section background */
+        }
+        .text-accent-blue { /* Custom class for specific elements if needed */
+            color: #2563EB;
+        }
+    </style>
+</head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	
 	<!-- Loader (from template) -->
@@ -718,7 +686,7 @@
           <div class="media-body">
             <h3 class="heading mb-3">Must Know PySpark Coding Before Your Next Databricks Interview</h3>
             <p>Hands-on code patterns, functions, and real-world logic questions asked in PySpark interviews.</p>
-            <a href="https://siddhartha-subudhi.github.io/pdfs/must-know-pyspark-coding-databricks.pdf" target="_blank" class="btn btn-sm btn-primary mt-2">📥 View PDF</a>
+            <a href="https://siddhartha-subudhi.github.io/pdfs/Must Know Before Your Next Databricks Interview.pdf" target="_blank" class="btn btn-sm btn-primary mt-2">📥 View PDF</a>
           </div>
         </div> 
       </div>
