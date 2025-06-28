@@ -31,4 +31,65 @@
   <script src="js/aos.js"></script>
   <script src="js/scrollax.min.js"></script>
   <script src="js/main.js"></script>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
 </head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+<!-- NAVIGATION BAR -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Siddhartha</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars"></span> Menu
+    </button>
+
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav nav ml-auto">
+        <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+        <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+        <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+        <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
+        <li class="nav-item"><a href="#resources-section" class="nav-link"><span>Resources</span></a></li>
+        <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION PLACEHOLDER -->
+<section id="home-section" class="hero">
+  <div class="home-slider owl-carousel">
+    <div class="slider-item">
+      <div class="overlay"></div>
+      <div class="container-fluid px-md-3 px-2">
+        <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+          <div class="one-third order-md-last img" style="background-image:url(images/bg_1.jpg);">
+            <div class="overlay"></div>
+            <div class="overlay-1"></div>
+          </div>
+          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+            <div class="text text-center text-md-left">
+              <span class="subheading">Hello! I'm Siddhartha Subudhi</span>
+              <h1 class="mb-4 mt-3">Crafting Scalable <span>Data Architectures</span> That Power Decisions</h1>
+              <p class="d-flex flex-column flex-md-row gap-2">
+                <a href="#projects-section" class="btn btn-primary">Explore Projects</a>
+                <a href="#blog-section" class="btn btn-primary btn-outline-primary">Read My Blog</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
