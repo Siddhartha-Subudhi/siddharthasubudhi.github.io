@@ -1,241 +1,861 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Siddhartha Subudhi - Data Engineer Portfolio">
-  <title>Siddhartha Subudhi | Data Engineer</title>
-  <link rel="icon" href="images/favicon.ico">
+	<title>Siddhartha Subudhi - Data Engineer & Technical Storyteller</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Siddhartha Subudhi - Professional Data Engineer specializing in scalable data pipelines, cloud architecture, and insightful technical blogging.">
+    <meta name="keywords" content="Data Engineer, Siddhartha Subudhi, Big Data, Cloud Data, Data Pipelines, ETL, Data Architecture, Technical Blog, Data Science, Analytics, AWS, Azure, GCP, Spark, Kafka, SQL, Python">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap" rel="stylesheet">
+	<!-- Poppins Font from original template -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- Font Awesome for common icons -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/flaticon.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- JS for interactive elements -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="js/main.js"></script>
+    <!-- Original template CSS files (ensure these are in your /css/ directory) -->
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/flaticon.css"> <!-- Used for various icons -->
+	<link rel="stylesheet" href="css/style.css">
 <style>
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
-    color: #333;
+  :root {
+    --primary: #DC2626;        /* Crimson Red */
+    --primary-light: #EF4444;  /* Soft Red */
+    --background: #FAFAFA;     /* Very Light Gray */
+    --text-dark: #1F2937;      /* Slate/Black */
+    --text-light: #ffffff;     /* White */
   }
-  html, body {
-    margin: 0;
-    padding: 0;
+
+  /* Base background and text */
+  body, html, .ftco-section, .hero-wrap, section, .bg-light {
+    background-color: var(--background) !important;
+    color: var(--text-dark) !important;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .heading-section .subheading,
+  .text-primary,
+  .navbar a,
+  a.nav-link,
+  .nav-link.active {
+    color: var(--primary) !important;
+  }
+
+  /* Primary buttons */
+  .btn-primary,
+  .btn.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: var(--text-light) !important;
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: var(--primary-light) !important;
+    border-color: var(--primary-light) !important;
+  }
+
+  /* Outline buttons */
+  .btn-outline-primary {
+    border-color: var(--primary) !important;
+    color: var(--primary) !important;
+  }
+
+  .btn-outline-primary:hover,
+  .btn-outline-primary:focus {
+    background-color: var(--primary) !important;
+    color: var(--text-light) !important;
+  }
+
+  /* Section backgrounds */
+  .bg-primary,
+  .ftco-section.bg-primary,
+  .ftco-footer {
+    background-color: var(--primary) !important;
+    color: var(--text-light) !important;
+  }
+
+  /* Links */
+  a {
+    color: var(--primary) !important;
+  }
+
+  a:hover {
+    color: var(--primary-light) !important;
+  }
+
+  /* Optional class for accents */
+  .text-accent-red {
+    color: var(--primary-light) !important;
   }
 </style>
-</head>
+
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	
+	<!-- Loader (from template) -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    <!-- Note: The loader uses #F96D00. If you want a consistent blue theme,
+         you'd need to modify this SVG or the associated CSS in style.css. -->
+	
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Siddhartha Subudhi<span>.</span></a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
 
-<!-- NAVIGATION BAR -->
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
+					<li class="nav-item"><a href="#resources-section" class="nav-link"><span>Resources</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section id="home-section" class="hero">
+		<div class="home-slider owl-carousel">
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container-fluid px-md-0">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+						<div class="one-third order-md-last img" style="background-image:url(images/bg_1.jpg);">
+							<div class="overlay"></div>
+							<div class="overlay-1"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello! I'm Siddhartha Subudhi</span>
+								<h1 class="mb-4 mt-3">Leading <span>Data</span> Engineering &amp; Architecture</h1>
+								<p><a href="#projects-section" class="btn btn-primary">Explore Projects</a> <a href="#blog-section" class="btn btn-primary btn-outline-primary">Read My Blog</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slider-item">
+				<div class="overlay"></div>
+				<div class="container-fluid px-md-0">
+					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+						<div class="one-third order-md-last img" style="background-image:url(images/bg_2.jpg);">
+							<div class="overlay"></div>
+							<div class="overlay-1"></div>
+						</div>
+						<div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Building Resilient Data Foundations</span>
+								<h1 class="mb-4 mt-3">I am <span>Siddhartha</span>, a Data Engineer &amp; Technical Storyteller.</h1>
+								<p><a href="#contact-section" class="btn btn-primary">Hire Me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV (Coming Soon)</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-counter img bg-light" id="section-counter">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-suitcase"></span> <!-- Original icon: suitcase -->
+						</div>
+						<div class="text">
+							<strong class="number" data-number="150">0</strong>
+							<span>Data Pipelines Built</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-loyalty"></span> <!-- Original icon: loyalty -->
+						</div>
+						<div class="text">
+							<strong class="number" data-number="50">0</strong>
+							<span>Client Solutions Delivered</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-coffee"></span> <!-- Original icon: coffee -->
+						</div>
+						<div class="text">
+							<strong class="number" data-number="1000">0</strong>
+							<span>GBs Processed Daily</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 justify-content-center counter-wrap ftco-animate">
+					<div class="block-18 d-flex">
+						<div class="icon d-flex justify-content-center align-items-center">
+							<span class="flaticon-calendar"></span> <!-- Original icon: calendar -->
+						</div>
+						<div class="text">
+							<strong class="number" data-number="7">0</strong>
+							<span>Years Experience</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-about ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex no-gutters">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay"></div>
+						<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about-1.jpg);">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
+					<div class="py-md-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								<span class="subheading">My Intro</span>
+								<h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
+								<p>Hello! I'm Siddhartha Subudhi, a Data Engineer driven by the power of data to inform, innovate, and impact. I specialize in building robust, scalable, and cloud-native data solutions that turn raw data into actionable intelligence. </p>
+                                <p>With over 6 years of experience, I bring deep expertise in designing end-to-end pipelines — from seamless ingestion and complex transformations to optimized warehousing and strict data governance. I thrive on solving real-world data challenges, improving performance, and delivering trusted data that fuels strategic decisions.</p>
+
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Name:</span> <span>Siddhartha Subudhi</span></li>
+									<li class="d-flex"><span>Role:</span> <span>Data Engineer</span></li>
+									<li class="d-flex"><span>Experience:</span> <span>6+ Years</span></li>
+									<li class="d-flex"><span>Email:</span> <span><a href="mailto:siddhartha.subudhi@outlook.com">siddhartha.subudhi@outlook.com</a></span></li>
+									<li class="d-flex"><span>LinkedIn:</span> <span><a href="https://www.linkedin.com/in/siddhartha-subudhi/" target="_blank">linkedin.com/in/siddhartha-subudhi</a></span></li>
+									<li class="d-flex"><span>Location:</span> <span>Bengaluru, India</span></li>
+								</ul>
+							</div>
+							<div class="col-md-12">
+								<div class="my-interest d-lg-flex w-100">
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="fa fa-code"></span> <!-- Using Font Awesome for coding -->
+										</div>
+										<div class="text">Coding</div>
+									</div>
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="fa fa-book"></span> <!-- Using Font Awesome for reading -->
+										</div>
+										<div class="text">Technical Writing</div>
+									</div>
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="fa fa-cloud"></span> <!-- Using Font Awesome for cloud/tech trends -->
+										</div>
+										<div class="text">Cloud Tech</div>
+									</div>
+									<div class="interest-wrap d-flex align-items-center">
+										<div class="icon d-flex align-items-center justify-content-center">
+											<span class="fa fa-users"></span> <!-- Using Font Awesome for community -->
+										</div>
+										<div class="text">Community</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="ftco-section bg-light" id="skills-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<span class="subheading">Proficiency</span>
+					<h2 class="mb-4">My Core Skills</h2>
+					<p>My expertise covers a wide range of technologies and methodologies crucial for modern data engineering.</p>
+				</div>
+			</div>
+			<div class="row progress-circle mb-5">
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">Python & PySpark</h2>
+						<div class="progress mx-auto" data-value='95'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">95<sup class="small">%</sup></div>
+							</div>
+						</div>
+						<div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								<div class="h4 font-weight-bold mb-0">High</div><span class="small text-gray">Efficiency</span>
+							</div>
+							<div class="col-6">
+								<div class="h4 font-weight-bold mb-0">Expert</div><span class="small text-gray">Level</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">SQL & Data Modeling</h2>
+						<div class="progress mx-auto" data-value='90'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">90<sup class="small">%</sup></div>
+							</div>
+						</div>
+						<div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								<div class="h4 font-weight-bold mb-0">Complex</div><span class="small text-gray">Queries</span>
+							</div>
+							<div class="col-6">
+								<div class="h4 font-weight-bold mb-0">Mastery</div><span class="small text-gray">Level</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">Cloud Platforms (AWS/Azure/GCP)</h2>
+						<div class="progress mx-auto" data-value='88'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">88<sup class="small">%</sup></div>
+							</div>
+						</div>
+						<div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								<div class="h4 font-weight-bold mb-0">Multi-Cloud</div><span class="small text-gray">Architectures</span>
+							</div>
+							<div class="col-6">
+								<div class="h4 font-weight-bold mb-0">Proficient</div><span class="small text-gray">Level</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">Big Data Frameworks (Spark/Kafka)</h2>
+						<div class="progress mx-auto" data-value='92'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">92<sup class="small">%</sup></div>
+							</div>
+						</div>
+						<div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								<div class="h4 font-weight-bold mb-0">Real-time</div><span class="small text-gray">Streaming</span>
+							</div>
+							<div class="col-6">
+								<div class="h4 font-weight-bold mb-0">Advanced</div><span class="small text-gray">Level</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">Data Warehousing (Snowflake/Redshift)</h2>
+						<div class="progress mx-auto" data-value='85'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">85<sup class="small">%</sup></div>
+							</div>
+						</div>
+						<div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								<div class="h4 font-weight-bold mb-0">Optimized</div><span class="small text-gray">Performance</span>
+							</div>
+							<div class="col-6">
+								<div class="h4 font-weight-bold mb-0">Experienced</div><span class="small text-gray">Level</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 mb-4">
+					<div class="bg-white rounded-lg shadow p-4">
+						<h2 class="h5 font-weight-bold text-center mb-4">Orchestration (Airflow/Docker)</h2>
+						<div class="progress mx-auto" data-value='90'>
+							<span class="progress-left">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<span class="progress-right">
+								<span class="progress-bar border-primary"></span>
+							</span>
+							<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+								<div class="h2 font-weight-bold">90<sup class="small">%</sup></div>
+							</div>
+						</div>
+						<div class="row text-center mt-4">
+							<div class="col-6 border-right">
+								<div class="h4 font-weight-bold mb-0">Automated</div><span class="small text-gray">Workflows</span>
+							</div>
+							<div class="col-6">
+								<div class="h4 font-weight-bold mb-0">Skilled</div><span class="small text-gray">Level</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</section>
+	<section class="ftco-section ftco-project" id="projects-section">
+		<div class="container-fluid px-md-4">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<span class="subheading">Accomplishments</span>
+					<h2 class="mb-4">My Data Engineering Projects</h2>
+					<p>Showcasing impactful solutions in cloud data architecture, pipeline optimization, and real-time data processing.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-1.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Real-time Streaming Analytics Platform</a></h3>
+							<span>Kafka & Spark Streaming</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-2.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Enterprise Data Warehouse Migration to Cloud</a></h3>
+							<span>Snowflake & AWS</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-3.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Automated Data Quality Monitoring Framework</a></h3>
+							<span>Airflow & Python</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-4.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Large-scale ETL Pipeline Optimization</a></h3>
+							<span>PySpark & Databricks</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-5.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Customer 360 Data Platform</a></h3>
+							<span>GCP BigQuery & Dataflow</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-6.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">Modern Data Lakehouse Implementation</a></h3>
+							<span>Delta Lake & Azure Synapse</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-7.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">DataOps Automation & CI/CD Pipelines</a></h3>
+							<span>Docker & Kubernetes</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-8.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3><a href="#">ML Feature Store Integration</a></h3>
+							<span>Python & MLOps Tools</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section testimony-section bg-primary">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section heading-section-white text-center ftco-animate">
+					<span class="subheading">Testimonials</span>
+					<h2 class="mb-4">What Clients Say About My Work</h2>
+					<p>Valued feedback from collaborators and clients on impactful data solutions.</p>
+				</div>
+			</div>
+			<div class="row ftco-animate">
+				<div class="col-md-12">
+					<div class="carousel-testimony owl-carousel">
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<span class="fa fa-quote-left"></span>
+									<p class="mb-4 pl-5">"Siddhartha's expertise in designing our cloud data pipeline was instrumental. He delivered a scalable solution that significantly improved our data processing efficiency and reliability. A true data engineering professional."</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Anika Sharma</p>
+											<span class="position">Head of Data Analytics</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<span class="fa fa-quote-left"></span>
+									<p class="mb-4 pl-5">"Working with Siddhartha on our data migration project was seamless. His attention to detail in ensuring data quality and his deep knowledge of Snowflake were invaluable. Highly recommend for any complex data initiatives."</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Priya Singh</p>
+											<span class="position">Product Manager</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<span class="fa fa-quote-left"></span>
+									<p class="mb-4 pl-5">"Siddhartha's ability to break down complex data architecture into understandable components is impressive. He not only builds robust systems but also effectively communicates the 'why' behind them, fostering better team collaboration."</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Rajesh Kumar</p>
+											<span class="position">CTO</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<span class="fa fa-quote-left"></span>
+									<p class="mb-4 pl-5">"As a technical writer, I appreciate Siddhartha's insightful articles. He dives deep into complex topics like PySpark optimization, providing clear, actionable advice. His writing truly adds value to the data community."</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Meera Devi</p>
+											<span class="position">Technical Content Strategist</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap py-4">
+								<div class="text">
+									<span class="fa fa-quote-left"></span>
+									<p class="mb-4 pl-5">"Siddhartha implemented our data governance framework with precision. His systematic approach ensured our data assets are now reliable and compliant, giving us confidence in our reporting."</p>
+									<div class="d-flex align-items-center">
+										<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+										<div class="pl-3">
+											<p class="name">Vikram Joshi</p>
+											<span class="position">Data Governance Lead</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section bg-light" id="blog-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<span class="subheading">Insights</span>
+					<h2 class="mb-4">My Latest Articles & Blog Posts</h2>
+					<p>Sharing knowledge, technical deep-dives, and perspectives on the evolving landscape of Data Engineering.</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="#" class="block-20" style="background-image: url('images/image_1.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
+								<p class="mb-0">
+									<span class="mr-2">June 20, 2024</span>
+									<a href="#" class="mr-2">Siddhartha Subudhi</a>
+									<a href="#" class="meta-chat"><span class="icon-chat"></span> 0</a> <!-- Placeholder for comments -->
+								</p>
+							</div>
+							<h3 class="heading"><a href="#">Architecting a Scalable Data Lakehouse on Cloud</a></h3>
+							<p>Exploring the hybrid approach to data management, combining the flexibility of data lakes with the structure of data warehouses for unified analytics.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="#" class="block-20" style="background-image: url('images/image_2.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
+								<p class="mb-0">
+									<span class="mr-2">May 28, 2024</span>
+									<a href="#" class="mr-2">Siddhartha Subudhi</a>
+									<a href="#" class="meta-chat"><span class="icon-chat"></span> 0</a>
+								</p>
+							</div>
+							<h3 class="heading"><a href="#">Real-time Data Processing with Apache Flink & Kafka</a></h3>
+							<p>A deep dive into building low-latency streaming applications for immediate insights and anomaly detection.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="#" class="block-20" style="background-image: url('images/image_3.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+							<div class="d-flex align-items-center mb-3 meta">
+								<p class="mb-0">
+									<span class="mr-2">April 10, 2024</span>
+									<a href="#" class="mr-2">Siddhartha Subudhi</a>
+									<a href="#" class="meta-chat"><span class="icon-chat"></span> 0</a>
+								</p>
+							</div>
+							<h3 class="heading"><a href="#">Implementing DataOps for Faster, More Reliable Data Delivery</a></h3>
+							<p>Best practices for automating data pipelines, testing, and deployment to improve data team efficiency.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="ftco-section" id="resources-section">
   <div class="container">
-    <a class="navbar-brand" href="index.html">Siddhartha</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="fa fa-bars"></span> Menu
-    </button>
-
-    <div class="collapse navbar-collapse" id="ftco-nav">
-      <ul class="navbar-nav nav ml-auto">
-        <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-        <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-        <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-        <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
-        <li class="nav-item"><a href="#resources-section" class="nav-link"><span>Resources</span></a></li>
-        <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO SECTION PLACEHOLDER -->
-<section id="home-section" class="hero">
-  <div class="home-slider owl-carousel">
-    <div class="slider-item">
-      <div class="overlay"></div>
-      <div class="container-fluid px-md-3 px-2">
-        <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-          <div class="one-third order-md-last img" style="background-image:url(images/bg_1.jpg);">
-            <div class="overlay"></div>
-            <div class="overlay-1"></div>
-          </div>
-          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-            <div class="text text-center text-md-left">
-              <span class="subheading">Hello! I'm Siddhartha Subudhi</span>
-              <h1 class="mb-4 mt-3">Crafting Scalable <span>Data Architectures</span> That Power Decisions</h1>
-              <p class="d-flex flex-column flex-md-row gap-2">
-                <a href="#projects-section" class="btn btn-primary">Explore Projects</a>
-                <a href="#blog-section" class="btn btn-primary btn-outline-primary">Read My Blog</a>
-<a href="https://siddharthasubudhi.github.io/pdfs/Siddhartha_Subudhi_Resume.pdf" class="btn btn-primary btn-outline-primary mt-2" target="_blank" download>📄 Download CV</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PLACEHOLDER SECTIONS TO RESTORE SITE STRUCTURE -->
-<section id="about-section" class="ftco-section">
-  <div class="container">
-    <div class="row justify-content-center mb-5 pb-3">
-      <div class="col-md-7 heading-section text-center ftco-animate">
-        <h2 class="mb-4">About Me</h2>
-        <p>I am Siddhartha Subudhi, a Data Engineer with a passion for building scalable data architectures and sharing knowledge through storytelling.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="projects-section" class="ftco-section">
-  <div class="container">
-    <div class="row justify-content-center mb-5 pb-3">
-      <div class="col-md-7 heading-section text-center ftco-animate">
-        <h2 class="mb-4">Projects</h2>
-        <p>Showcasing my work in data engineering, ETL pipelines, cloud platforms, and analytics solutions.</p>
-      </div>
-    </div>
-    <!-- Add actual project cards here -->
-  </div>
-</section>
-
-<section id="blog-section" class="ftco-section bg-light">
-  <div class="container">
-    <div class="row justify-content-center mb-5 pb-3">
-      <div class="col-md-7 heading-section text-center ftco-animate">
-        <h2 class="mb-4">Blog</h2>
-        <p>Insights, tutorials, and best practices in data engineering and cloud analytics.</p>
-      </div>
-    </div>
-    <!-- Add blog cards or previews -->
-  </div>
-</section>
-
-<section id="resources-section" class="ftco-section">
-  <div class="container">
-    <div class="row justify-content-center mb-5 pb-3">
-      <div class="col-md-7 heading-section text-center ftco-animate">
-        <h2 class="mb-4">Resources</h2>
-        <p>Download my curated PDF guides for interview preparation and real-world data scenarios.</p>
-      </div>
-    </div>
-    <!-- Resource Card 1 -->
-<div class="col-md-6 col-lg-4">
-  <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-    <div class="icon d-flex align-items-center justify-content-center">
-      <i class="fa fa-question-circle" style="font-size:36px;"></i>
-    </div>
-    <div class="media-body">
-      <h3 class="heading mb-3">Top 5 PySpark Interview Questions and Answers</h3>
-      <p>Quick-fire Q&A covering the most common PySpark topics in interviews.</p>
-      <a href="https://siddharthasubudhi.github.io/pdfs/Top%205%20PySpark%20Interview%20Questions%20and%20Answers.pdf" class="btn btn-sm btn-primary mt-2" target="_blank" download>📥 View PDF</a>
-    </div>
-  </div>
-</div>
-
-<!-- Resource Card 2 -->
-<div class="col-md-6 col-lg-4">
-  <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-    <div class="icon d-flex align-items-center justify-content-center">
-      <i class="fa fa-code" style="font-size:36px;"></i>
-    </div>
-    <div class="media-body">
-      <h3 class="heading mb-3">Must Know PySpark Coding Before Your Next Databricks Interview</h3>
-      <p>Hands-on code logic and patterns commonly asked in PySpark interviews.</p>
-      <a href="https://siddharthasubudhi.github.io/pdfs/Must%20Know%20Pyspark%20Coding%20Before%20Your%20Next%20Databricks%20Interview.pdf" class="btn btn-sm btn-primary mt-2" target="_blank" download>📥 View PDF</a>
-    </div>
-  </div>
-</div>
-
-<!-- Resource Card 3 -->
-<div class="col-md-6 col-lg-4">
-  <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-    <div class="icon d-flex align-items-center justify-content-center">
-      <i class="fa fa-database" style="font-size:36px;"></i>
-    </div>
-    <div class="media-body">
-      <h3 class="heading mb-3">Must Know Before Your Next Databricks Interview</h3>
-      <p>Key concepts in Databricks: architecture, delta lake, optimizations, clusters, and more.</p>
-      <a href="https://siddharthasubudhi.github.io/pdfs/Must%20Know%20Before%20Your%20Next%20Databricks%20Interview.pdf" class="btn btn-sm btn-primary mt-2" target="_blank" download>📥 View PDF</a>
-    </div>
-  </div>
-</div>
-  </div>
-</section>
-
-<section id="contact-section" class="ftco-section contact-section bg-light">
-  <div class="container">
-    <div class="row justify-content-center mb-5 pb-3">
-      <div class="col-md-7 heading-section text-center ftco-animate">
-        <h2 class="mb-4">Contact Me</h2>
-        <p>Reach out for collaborations, opportunities, or questions.</p>
-      </div>
-    </div>
     <div class="row justify-content-center">
-      <div class="col-md-10">
-        <form action="https://formspree.io/f/moqybzrr" method="POST" class="bg-white p-4 p-md-5 contact-form">
-          <div class="form-group">
-            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+      <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+        <span class="subheading">Interview Vault</span>
+        <h2 class="mb-4">Download My Technical Prep Guides</h2>
+        <p>These curated PDFs are designed to help you master PySpark and Databricks concepts, ace interviews, and solve real-world data engineering problems.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Resource 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <i class="fa fa-question-circle" style="font-size:36px;"></i>
           </div>
-          <div class="form-group">
-            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+          <div class="media-body">
+            <h3 class="heading mb-3">Top 5 PySpark Interview Questions and Answers</h3>
+            <p>Direct and concise answers to the most frequently asked PySpark questions in technical interviews.</p>
+            <a href="https://siddhartha-subudhi.github.io/pdfs/top-5-pyspark-interview-questions.pdf" target="_blank" class="btn btn-sm btn-primary mt-2">📥 View PDF</a>
           </div>
-          <div class="form-group">
-            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+        </div> 
+      </div>
+
+      <!-- Resource 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <i class="fa fa-code" style="font-size:36px;"></i>
           </div>
-          <div class="form-group">
-            <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+          <div class="media-body">
+            <h3 class="heading mb-3">Must Know PySpark Coding Before Your Next Databricks Interview</h3>
+            <p>Hands-on code patterns, functions, and real-world logic questions asked in PySpark interviews.</p>
+            <a href="https://siddhartha-subudhi.github.io/pdfs/must-know-pyspark-coding-databricks.pdf" target="_blank" class="btn btn-sm btn-primary mt-2">📥 View PDF</a>
           </div>
-          <div class="form-group">
-            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+        </div> 
+      </div>
+
+      <!-- Resource 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <i class="fa fa-database" style="font-size:36px;"></i>
           </div>
-        </form>
+          <div class="media-body">
+            <h3 class="heading mb-3">Must Know Before Your Next Databricks Interview</h3>
+            <p>A comprehensive guide covering key Databricks concepts, architecture, optimizations, and use cases.</p>
+            <a href="https://siddhartha-subudhi.github.io/pdfs/must-know-before-databricks-interview.pdf" target="_blank" class="btn btn-sm btn-primary mt-2">📥 View PDF</a>
+          </div>
+        </div> 
       </div>
     </div>
   </div>
 </section>
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<span class="subheading">Connect with Me</span>
+					<h2 class="mb-4">Have a Data Project or Inquiry?</h2>
+					<p>Whether you need expert consultation, collaborative development, or just want to discuss the future of data engineering, I'm eager to connect.</p>
+				</div>
+			</div>
 
-<!-- FOOTER -->
-<footer class="ftco-footer ftco-section">
-  <div class="container text-center">
-    <div class="row mb-5">
-      <div class="col-md">
-        <ul class="ftco-footer-social list-unstyled d-flex justify-content-center flex-wrap">
-          <li class="ftco-animate mx-2"><a href="https://www.linkedin.com/in/siddhartha-subudhi/" target="_blank"><span class="fa fa-linkedin"></span></a></li>
-          <li class="ftco-animate mx-2"><a href="https://github.com/SiddharthaSubudhi" target="_blank"><span class="fa fa-github"></span></a></li>
-          <li class="ftco-animate mx-2"><a href="https://medium.com/@siddhartha.subudhi" target="_blank"><span class="fa fa-medium"></span></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md text-center">
-        <p class="text-gray-400">&copy; <span id="current-year"></span> Siddhartha Subudhi. All rights reserved.</p>
-      </div>
-    </div>
-  </div>
-</footer>
+			<div class="row block-9">
+				<div class="col-md-8">
+					<form action="#" class="bg-light p-4 p-md-5 contact-form">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Your Name" required>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="email" class="form-control" placeholder="Your Email" required>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Subject (e.g., Project Inquiry, Collaboration, General Question)">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Your Message" required></textarea>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
 
-<script>
-  document.getElementById('current-year').textContent = new Date().getFullYear();
-</script>
+				<div class="col-md-4 d-flex align-items-stretch">
+					<div class="info-wrap bg-primary w-100 p-md-5 p-4">
+						<h3>Contact Information</h3>
+						<p class="mb-4">Feel free to reach out through any of these channels.</p>
+                        <div class="dbox w-100 d-flex align-items-center">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fa fa-map-marker"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <p><span>Address:</span> Bengaluru, Karnataka, India</p>
+                            </div>
+                        </div>
+                        <div class="dbox w-100 d-flex align-items-center">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fa fa-phone"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <p><span>Phone:</span> <a href="tel://+91XXXXXXXXXX">+91 XXXXX XXXXX</a></p>
+                            </div>
+                        </div>
+                        <div class="dbox w-100 d-flex align-items-center">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fa fa-paper-plane"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <p><span>Email:</span> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                            </div>
+                        </div>
+                        <div class="dbox w-100 d-flex align-items-center">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fa fa-linkedin"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <p><span>LinkedIn:</span> <a href="https://linkedin.com/in/yourlinkedinprofile" target="_blank">linkedin.com/in/SiddharthaSubudhi</a></p>
+                            </div>
+                        </div>
+                        <div class="dbox w-100 d-flex align-items-center">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fa fa-github"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <p><span>GitHub:</span> <a href="https://github.com/yourgithubprofile" target="_blank">github.com/SiddharthaSubudhi</a></p>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Original template JS files (ensure these are in your /js/ directory) -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	
+	<!-- Main template JS (ensure this is in your /js/ directory) -->
+	<script src="js/main.js"></script>
+
+    <!-- Custom script for year in footer -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelector('.ftco-footer .container .text-gray-400').innerHTML = '&copy; ' + new Date().getFullYear() + ' Siddhartha Subudhi. All rights reserved.';
+            // If the footer element is directly accessible via an ID, it's better to use that:
+            // document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
+    </script>
 </body>
 </html>
